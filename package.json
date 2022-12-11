@@ -39,6 +39,7 @@
   "devDependencies": {
     "eslint-config-react-app": "^7.0.1",
     "stylelint": "^14.16.0",
+    "stylelint-config-recess-order": "^3.0.0",
     "stylelint-config-standard": "^29.0.0"
   }
 }
