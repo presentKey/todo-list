@@ -1,0 +1,17 @@
+.stateBtn {
+  position: relative;
+  top: 2px;
+  padding: 0;
+  margin-right: 0.7em;
+  font-size: 1em;
+  font-weight: 700;
+  color: #ee842c;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+}
+
+.stateBtn.is_active {
+  border-bottom: 2px solid #000;
+}
