@@ -9,6 +9,7 @@
 .todoListSection {
   width: 400px;
   height: 480px;
+  overflow: hidden;
   background-color: #fff;
   border-radius: 8px;
 }
