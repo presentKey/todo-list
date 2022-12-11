@@ -7,6 +7,8 @@
 }
 
 .todoListSection {
+  display: flex;
+  flex-direction: column;
   width: 400px;
   height: 480px;
   overflow: hidden;

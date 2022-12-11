@@ -1,5 +1,6 @@
 import Header from './Header';
 import Main from './Main';
+import Footer from './Footer';
 import styles from './TodoList.module.css';
 
 function TodoList() {
@@ -8,6 +9,7 @@ function TodoList() {
       <section className={styles.todoListSection}>
         <Header />
         <Main />
+        <Footer />
       </section>
     </div>
   );
