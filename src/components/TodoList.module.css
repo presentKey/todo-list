@@ -1,10 +1,9 @@
 .todoList {
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: #3e424e;
+  justify-content: center;
   height: 100vh;
-  pointer-events: none;
+  background-color: #3e424e;
 }
 
 .todoListSection {
