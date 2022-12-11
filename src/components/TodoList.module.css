@@ -1,0 +1,15 @@
+.todoList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3e424e;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.todoListSection {
+  width: 400px;
+  height: 480px;
+  background-color: #fff;
+  border-radius: 8px;
+}
