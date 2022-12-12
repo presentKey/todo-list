@@ -1,43 +1,39 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './Main.module.css';
 import { MdDeleteForever } from 'react-icons/md';
 
 export default function Main() {
+  const [items, setItems] = useState([]);
+  useEffect(() => {
+    const TODO = 'TODO';
+    setItems((prev) => (prev = JSON.parse(localStorage.getItem(TODO))));
+  }, []);
+
   return (
     <main className={styles.main}>
       <ul className={styles.todo_list}>
-        <li className={styles.todo_item}>
-          <div className={styles.item_left}>
-            <input
-              className={styles.checkbox}
-              type="checkbox"
-              name=""
-              id="check1"
-            />
-            <label htmlFor="check1" className={styles.content}>
-              공부하기
-            </label>
-          </div>
-          <div className={styles.item_right}>
-            <MdDeleteForever />
-          </div>
-        </li>
-        <li className={styles.todo_item}>
-          <div className={styles.item_left}>
-            <input
-              className={styles.checkbox}
-              type="checkbox"
-              name=""
-              id="check2"
-            />
-            <label htmlFor="check2" className={styles.content}>
-              강의보기
-            </label>
-          </div>
-          <div className={styles.item_right}>
-            <MdDeleteForever />
-          </div>
-        </li>
+        {items !== null
+          ? items.map((item, index) => {
+              return (
+                <li key={index} className={styles.todo_item}>
+                  <div className={styles.item_left}>
+                    <input
+                      className={styles.checkbox}
+                      type="checkbox"
+                      name=""
+                      id="check1"
+                    />
+                    <label htmlFor="check1" className={styles.content}>
+                      {item}
+                    </label>
+                  </div>
+                  <div className={styles.item_right}>
+                    <MdDeleteForever />
+                  </div>
+                </li>
+              );
+            })
+          : null}
       </ul>
     </main>
   );
