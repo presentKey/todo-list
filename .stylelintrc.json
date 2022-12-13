@@ -48,7 +48,7 @@
     "comment-empty-line-before": "never",
     "declaration-colon-newline-after": null,
     "declaration-block-no-duplicate-custom-properties": true,
-    "declaration-block-no-duplicate-properties": true,
+    "declaration-block-no-duplicate-properties": null,
     "declaration-block-semicolon-newline-after": "always",
     "declaration-block-no-shorthand-property-overrides": true,
     "declaration-block-single-line-max-declarations": [
@@ -114,6 +114,7 @@
     "no-unknown-animations": true,
     "no-missing-end-of-source-newline": null,
     "property-no-unknown": true,
+    "property-no-vendor-prefix": null,
     "rule-empty-line-before": null,
     "selector-class-pattern": null,
     "selector-attribute-quotes": [
@@ -154,6 +155,7 @@
     ],
     "unit-no-unknown": true,
     "value-list-comma-space-before": "never",
+    "value-list-comma-newline-after": null,
     "value-no-vendor-prefix": null
   }
 }
